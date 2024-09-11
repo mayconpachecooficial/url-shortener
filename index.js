@@ -4,7 +4,7 @@ const Url = require('./models/url');
 
 async function syncDatabase() {
   try {
-    await sequelize.sync({ alter: true }); // Cria as tabelas e ajusta a estrutura conforme necessário
+    await sequelize.sync({ alter: true }); 
     console.log('Database synced');
   } catch (error) {
     console.error('Error syncing database:', error);
